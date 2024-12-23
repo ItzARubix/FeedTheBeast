@@ -36,13 +36,11 @@ public class HelloWorld {
 		// will print the error message in System.err.
 		GLFWErrorCallback.createPrint(System.err).set();
 
-		glfwInitHint(GLFW_PLATFORM, GLFW_PLATFORM_X11); // Because Wayland does NOT work lmao
-		// TODO: Update this bit to make the program cross platform.
-		// At the very least, this should include using the ZIP Bundle, extracted to ProjectRoot/lwjgl,
-		// instead of using the systemwide LWJGL installation.
-		// The compile and run scripts can then only include ./lwjgl/* probably (probably? We'll see).
-		// You also might be able to use GLFW functionality to check if the user is on Mac/Windows,
-		// and if they are, don't set the platform to X11
+		if (System.getProperty("os.name").equals("Linux")) {
+			glfwInitHint(GLFW_PLATFORM, GLFW_PLATFORM_X11); // Because Wayland does NOT work lmao
+		}
+		// I'm unsure if it's necessary to InitHint for other platforms,
+		// as by default it should work correctly. Someone can spin up a VM to test probs
 		
 		// Initialize GLFW. Most GLFW functions will not work before doing this.
 		if ( !glfwInit() )
