@@ -3,6 +3,7 @@
   "mode": "zip",
   "selectedAddons": [],
   "platform": [
+    "freebsd",
     "linux",
     "linux-arm64",
     "linux-arm32",
@@ -14,7 +15,7 @@
     "linux-ppc64le",
     "linux-riscv64"
   ],
-  "descriptions": false,
+  "descriptions": true,
   "compact": false,
   "hardcoded": false,
   "javadoc": true,
@@ -31,7 +32,6 @@
     "lwjgl-fmod",
     "lwjgl-freetype",
     "lwjgl-glfw",
-    "lwjgl-harfbuzz",
     "lwjgl-hwloc",
     "lwjgl-jawt",
     "lwjgl-jemalloc",
@@ -40,7 +40,6 @@
     "lwjgl-llvm",
     "lwjgl-lmdb",
     "lwjgl-lz4",
-    "lwjgl-meow",
     "lwjgl-meshoptimizer",
     "lwjgl-msdfgen",
     "lwjgl-nanovg",
@@ -56,15 +55,13 @@
     "lwjgl-remotery",
     "lwjgl-rpmalloc",
     "lwjgl-shaderc",
-    "lwjgl-spvc",
-    "lwjgl-sse",
     "lwjgl-stb",
     "lwjgl-tinyexr",
     "lwjgl-tinyfd",
-    "lwjgl-tootle",
     "lwjgl-xxhash",
     "lwjgl-yoga",
-    "lwjgl-zstd"
+    "lwjgl-zstd",
+    "lwjgl-harfbuzz"
   ],
   "version": "3.3.5",
   "versionLatest": "3.3.5"
